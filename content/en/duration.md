@@ -29,6 +29,10 @@ Duration {
 };
 ```
 
+**No weeks/months/years?**
+
+Nah they're a pain. How'd the code even know how many days are there in that month? I kept `days` as the last one coz it'll be easy to translate into weeks and years easily, while weeks-years wouldn't be as accurate.
+
 ## Features
 
 <list :items="features"></list>

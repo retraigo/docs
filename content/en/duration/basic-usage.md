@@ -56,6 +56,10 @@ console.log(myDuration);
 ```
 <alert type = "warning">It is recommended to avoid using `setHours` and similar methods since they may result in unexpected behavior. It is better to use `addHours` and similar methods.</alert>
 
+**I don't want a duration class. It's a pain.**
+
+Ok. Just use the `.json` property (a getter to be specific). It'll return a plain ol object.
+
 ## Get formatted duration
 
 
@@ -74,6 +78,7 @@ myDuration.getFormattedDuration();
 ```
 
 **What if I don't want all of that? I just want a MM:SS timer!**
+
 Ok sure. You can pass `from` and `to` parameters to the method to just get the duration between those two.
 ```ts
 myDuration.getFormattedDuration("m", "s");
@@ -107,3 +112,26 @@ Nah. We have our friendly neighborhood `null` with us.
 myDuration.stringify(null, true);
 // `0d 0h 2m 45s 684ms 0us 0ns`
 ```
+
+## Get duration from a string
+**What about when you said it can parse human-readable strings?**
+
+Yes.
+
+The `fromString` static method can construct a duration from such a string. 
+However, it still has limitations (which I haven't found yet). 
+
+```ts
+const myString = "4090 sec 4939  days 7342  hour 2324milliseconds 4344 min"
+Duration.fromString(); 
+// Duration {d: 5246, h: 13, m: 52, s: 12, ms: 324 }
+```
+
+**Can it not read data from strings like `HH:MM:SS`?**
+
+The code has no way of knowing what part of the string is what. 
+Moreover, such a string can be easily passed by a user with the `string.split()` method.
+
+**I don't want a duration class. It's a pain.**
+
+Ok. Just use the `readString` static method. It'll return the same data `Duration.json` does.
