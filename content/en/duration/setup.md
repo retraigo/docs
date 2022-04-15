@@ -10,12 +10,25 @@ menuTitle: Setup
 
 Import `duration` in your project.
 
+<code-group>
+<code-block label = "deno" active>
+
 ```ts
 import { Duration } from "https://deno.land/x/durationjs/mod.ts";
 ```
 
-It is recommended to centre your dependencies around a `deps.ts` file for easier
-management of dependencies.
+</code-block>
+  <code-block label = "node">
+
+```ts
+import { Duration } from "@retraigo/duration.js";
+```
+
+</code-block>
+</code-group>
+
+For deno, it is recommended to centre your dependencies around a `deps.ts` file
+for easier management of dependencies.
 
 <code-group>
 <code-block label = "deps.ts" active>
