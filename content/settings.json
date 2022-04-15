@@ -1,0 +1,10 @@
+{
+  "title": "Neko Of The Abyss Docs",
+  "url": "https://docs.nekooftheabyss.moe",
+  "logo": {
+    "light": "/neko_light.svg",
+    "dark": "/neko_dark.svg"
+  },
+  "github": "retraigo/duration.js",
+  "twitter": "@retraigo"
+}
