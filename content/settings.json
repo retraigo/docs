@@ -6,5 +6,6 @@
     "dark": "/neko_dark.svg"
   },
   "github": "retraigo/docs",
+  "defaultDir": "",
   "twitter": "@retraigo"
 }
