@@ -1,8 +1,9 @@
 ---
-title: Introduction
+title: Fortuna
 description: 'Weighted gacha system in TypeScript.'
 position: 2
 category: Fortuna
+menuTitle: Introduction
 features:
   - Lightweight
   - Typescript

@@ -1,8 +1,9 @@
 ---
-title: Introduction
+title: Duration
 description: 'Convert milliseconds or human-readable strings into time units and vice versa.'
 position: 6
 category: Duration
+menuTitle: Introduction
 features:
   - Lightweight
   - Typescript
