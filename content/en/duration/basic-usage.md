@@ -60,59 +60,6 @@ console.log(myDuration);
 
 Ok. Just use the `.json` property (a getter to be specific). It'll return a plain ol object.
 
-## Get formatted duration
-
-
-```ts
-const myDuration = new Duration(165684)
-```
-
-While such an object is quite neat for developers, it would be a pain when users see the same. There are methods for converting the any duration instance into a human-readable string.
-
-### The DD:HH:MM:SS format
-
-The `getFormattedDuration` method outputs a string in that format. Quite nice for timers and stuff.
-```ts
-myDuration.getFormattedDuration();
-// `00:00:02:45:684`
-```
-
-**What if I don't want all of that? I just want a MM:SS timer!**
-
-Ok sure. You can pass `from` and `to` parameters to the method to just get the duration between those two.
-```ts
-myDuration.getFormattedDuration("m", "s");
-// `02:45`
-```
-
-### The word format
-
-The `stringify` method outputs a string in that format. Quite nice for normal text that ain't timers and stuff.
-```ts
-myDuration.stringify();
-// `0 days, 0 hours, 2 minutes, 45 seconds, 684 milliseconds 0, microseconds, 0 nanoseconds`
-```
-
-You can provide specific units if you don't want all units.
-```ts
-myDuration.stringify(["s", "h"]);
-// `0 hours, 45 seconds`
-```
-
-Still too long? Fortunately, there's another parameter for the function to tell it to shrink the string!
-```ts
-myDuration.stringify(["s", "h"], true);
-// `0h 45s`
-```
-
-**What if I want all units but I also want them short? Should I supply every unit in the first parameter?**
-
-Nah. We have our friendly neighborhood `null` with us.
-```ts
-myDuration.stringify(null, true);
-// `0d 0h 2m 45s 684ms 0us 0ns`
-```
-
 ## Get duration from a string
 **What about when you said it can parse human-readable strings?**
 

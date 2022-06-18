@@ -2,8 +2,8 @@
   "title": "Neko Of The Abyss Docs",
   "url": "https://docs.nekooftheabyss.moe",
   "logo": {
-    "light": "/neko_light.svg",
-    "dark": "/neko_dark.svg"
+    "light": "/eye/Neko_L.webp",
+    "dark": "/eye/Neko_L.webp"
   },
   "github": "retraigo/docs",
   "defaultDir": "",
