@@ -6,7 +6,7 @@ category: Fortuna
 menuTitle: Introduction
 features:
   - Lightweight
-  - Typescript
+  - TypeScript
   - No Dependencies
 ---
 

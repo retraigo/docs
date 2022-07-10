@@ -6,12 +6,12 @@ category: Duration
 menuTitle: Introduction
 features:
   - Lightweight
-  - Typescript
+  - TypeScript
   - No Dependencies
   - Customizable Formatting
 ---
 
-Duration is a single Class written in Typescript. It can infer units of time
+Duration is a single Class written in TypeScript. It can infer units of time
 from milliseconds and human-readable strings and output desired formatted
 strings too.
 
